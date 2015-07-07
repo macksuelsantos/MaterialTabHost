@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 Yuki Anzai anzai.y.aa@gmail.com
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2014 Yuki Anzai anzai.y.aa@gmail.com
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -21,6 +20,7 @@
     android:layout_weight="1"
     android:gravity="bottom|center_horizontal"
     android:paddingBottom="@dimen/mth_tab_bottom_padding"
+    android:textAllCaps="true"
     android:textColor="@color/mth_tab_widget_text"
     android:textSize="@dimen/mth_tab_text_size"
     tools:layout_width="match_parent"
