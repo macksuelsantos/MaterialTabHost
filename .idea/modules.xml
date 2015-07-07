@@ -3,9 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MaterialTabHost.iml" filepath="$PROJECT_DIR$/MaterialTabHost.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mth/app.iml" filepath="$PROJECT_DIR$/mth/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/mth/mth.iml" filepath="$PROJECT_DIR$/mth/mth.iml" />
     </modules>
   </component>
 </project>
-

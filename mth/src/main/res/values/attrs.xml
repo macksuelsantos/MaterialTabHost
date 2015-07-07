@@ -2,5 +2,6 @@
 <resources>
     <declare-styleable name="MaterialTabHost">
         <attr name="colorTabIndicator" format="color|reference" />
+        <attr name="colorBackground" format="color|reference" />
     </declare-styleable>
 </resources>

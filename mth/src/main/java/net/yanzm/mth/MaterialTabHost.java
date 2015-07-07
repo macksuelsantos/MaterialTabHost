@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
@@ -81,19 +82,11 @@ public class MaterialTabHost extends TabHost implements ViewPager.OnPageChangeLi
 
         inflater = LayoutInflater.from(context);
 
-        TypedValue outValue = new TypedValue();
-        Resources.Theme theme = context.getTheme();
-
-        // use ?attr/colorPrimary as background color
-        theme.resolveAttribute(R.attr.colorPrimary, outValue, true);
-        setBackgroundColor(outValue.data);
-
-        // use ?attr/colorControlActivated as default indicator color
-        theme.resolveAttribute(R.attr.colorControlActivated, outValue, true);
-        colorControlActivated = outValue.data;
-
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.MaterialTabHost, 0, 0);
-        int indicatorColor = a.getColor(R.styleable.MaterialTabHost_colorTabIndicator, colorControlActivated);
+        int indicatorColor = a.getColor(R.styleable.MaterialTabHost_colorTabIndicator, Color.YELLOW);
+        colorControlActivated = a.getColor(R.styleable.MaterialTabHost_colorBackground, Color.WHITE);
+
+        setBackgroundColor(colorControlActivated);
         a.recycle();
 
         // ColorDrawable on 2.x does not use getBounds() so use ShapeDrawable
